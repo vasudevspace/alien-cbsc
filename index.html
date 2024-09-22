@@ -8,17 +8,17 @@
     
 </head>
 <body>
-	<div class="header"> <div class="image">
-	<img src="delicious_treat.jpeg" alt="logo"> </div>
-
- 
-	<h1>Delicious Treat</h1>
-    	<h2>Welcome to my shop</h2>
-    	<h3>Here you will get wide variety of homemade chocolate in different Flavours</h3>
-    	<h4>From Each bite you will get a Blissful delight</h4>
-    	<h5>My chocolates are known for their high Quality, smooth texture, and rich flavor.
-	    I put care into every piece to ensure a Delicious, Favorable and Enjoyable Taste</h5>
-    	<h6>Order confirmation required 24 hours prior </h6>
+    <div class="nav flex">
+        <img class="logo" src="delicious_treat_bgRemoved.png" alt="logo">
+    </div>
+    
+    <h1>Delicious Treat</h1>
+    <h2>Welcome to my shop</h2>
+    <h3>Here you will get wide variety of homemade chocolate in different Flavours</h3>
+    <h4>From Each bite you will get a Blissful delight</h4>
+    <h5>My chocolates are known for their high Quality, smooth texture, and rich flavor.
+    I put care into every piece to ensure a Delicious, Favorable and Enjoyable Taste</h5>
+    <h6>Order confirmation required 24 hours prior </h6>
 
 
 	<p><a href="#categories">MENU</a></p>
@@ -34,7 +34,7 @@
         <li>Candy bar </li>
         <li>Chocolates with different flavour and Shapes </li>
         <li>Seasonal Flavour</li>
-	<li>Chocolate boxes in different sizes</li>
+	    <li>Chocolate boxes in different sizes</li>
     </ol>
 
     <!-- Unordered List -->
@@ -58,7 +58,7 @@
     <p><strong>Our mission</strong> is to sell pure Homemade Chocolates with <em>high Quality, smooth texture</em> and <small>rich flavor</small>.</p>
 
     <!-- Table -->
-    <h2>Rates of Chocolates</h2>
+    <h2 class="align-center">Rates of Chocolates</h2>
     <table border="1">
         <tr>
             <th>Chocolate</th>
@@ -78,14 +78,29 @@
         </tr>
     </table>
 
-    <!-- Image -->
-    <h2>Our Business Hub</h2>
-    <img src="shop.jpeg" alt="Business Hub" width="300" height="200">
+    <div class="flex multimedia-container">
+        <div>
+            <!-- Image -->
+            <h2 class="align-center">Our Business Hub</h2>
+            <div class="flex image">
+                <img  src="shop.jpeg" alt="Business Hub" width="400" height="235">
+            </div>
+        </div>
+    
+        <div>
+            <!-- Video -->
+            <h2 class="align-center">Watch Our Chocolate-Making Process</h2>
+            <video controls width="400">
+                <source src="chocolate_process.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
 
     
 
     <!-- Form -->
-    <h2>Contact Us</h2>
+    <h2 class="align-center">Contact Us</h2>
     <form>
         <!-- Text Input -->
         <label for="name">Name:</label>
@@ -114,12 +129,17 @@
         <input type="submit" value="Submit">
     </form>
 
-    <!-- Frameset -->
-    <h2>External Resources</h2>
+    <!-- <h2>External Resources</h2>
     <frameset cols="50%, 50%">
-        <frame src="https://www.example.com">
-        <frame src="https://www.example.com">
-    </frameset>
+        <frame src="https://www.google.com">
+        <frame src="https://www.w3schools.com">
+    </frameset> -->
+
+    <h2 class="align-center">External Resources</h2>
+    <div class="flex frameset">
+        <iframe src="https://www.example.com" width="400" height="300" style="border:2px solid #3498db;"></iframe>
+        <iframe src="https://www.example.com" width="400" height="300" style="border:2px solid #3498db;"></iframe>
+    </div>
 
 </body>
 </html>
